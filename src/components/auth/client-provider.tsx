@@ -1,7 +1,6 @@
-// client-provider.tsx
 'use client';
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { AuthProvider } from './provider';
 
 export default function ClientProvider({ 
   children 
@@ -9,8 +8,8 @@ export default function ClientProvider({
   children: React.ReactNode 
 }) {
   return (
-    <ChakraProvider>
+    <AuthProvider>
       {children}
-    </ChakraProvider>
+    </AuthProvider>
   );
 }

@@ -8,8 +8,11 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu, Building2, Users, Briefcase, ArrowUpRight, LucideIcon } from "lucide-react";
+import { Menu, Building2, Users, Layout, Upload, LogIn, LogOut } from "lucide-react";
 import { motion } from "framer-motion";
+import { useAuth } from '../components/auth/provider';
+import { useRouter } from 'next/navigation';
+import supabaseClient from '@/app/db/client';
 
 interface NavLinkProps {
   href: string;
@@ -59,6 +62,9 @@ interface NavItem {
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
+  const [isLogoutHovered, setIsLogoutHovered] = useState<boolean>(false);
+  const { user, loading } = useAuth();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = (): void => {
@@ -69,11 +75,30 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems: NavItem[] = [
-    { href: "/careers", icon: Briefcase, label: "Careers" },
+  const handleLogout = async () => {
+    try {
+      await supabaseClient.auth.signOut();
+      router.push('/');
+    } catch (error) {
+      console.error('Error signing out:', error);
+    }
+  };
+
+  const publicNavItems: NavItem[] = [
     { href: "/beta", icon: Users, label: "Partnership", badge: true },
     { href: "/company", icon: Building2, label: "Company" }
   ];
+
+  const authenticatedNavItems: NavItem[] = [
+    { href: "/overview", icon: Layout, label: "Overview" },
+    { href: "/uploads", icon: Upload, label: "Uploads" }
+  ];
+
+  const navItems = user ? authenticatedNavItems : publicNavItems;
+
+  if (loading) {
+    return <div className="h-16 bg-[#082832]" />; // Loading skeleton
+  }
 
   return (
     <motion.div
@@ -90,7 +115,7 @@ const Navbar: React.FC = () => {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <motion.img
             src="/images/mastic-logo.jpeg"
-            alt="Mastic Logo"
+            alt="Faro Logo"
             className="h-5 w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -98,11 +123,49 @@ const Navbar: React.FC = () => {
         </Link>
 
         <div className="hidden md:flex items-center space-x-2">
-          <NavLink href="/beta" badge={true}>Partnership</NavLink>
-          <NavLink href="/company">Company</NavLink>
+          {navItems.map((item) => (
+            <NavLink key={item.href} href={item.href} badge={item.badge}>
+              {item.label}
+            </NavLink>
+          ))}
         </div>
 
         <div className="ml-auto flex items-center space-x-4">
+          {user ? (
+            <motion.div
+              onHoverStart={() => setIsLogoutHovered(true)}
+              onHoverEnd={() => setIsLogoutHovered(false)}
+              className="relative"
+            >
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleLogout}
+                className="text-white"
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Logout
+              </Button>
+              <motion.div
+                className="absolute bottom-0 left-0 h-0.5 bg-cyan-400"
+                initial={{ width: 0 }}
+                animate={{ width: isLogoutHovered ? '100%' : 0 }}
+                transition={{ duration: 0.2 }}
+              />
+            </motion.div>
+          ) : (
+            <Link href="/login">
+              <Button
+                variant="default"
+                size="sm"
+                className="bg-white text-black hover:bg-gray-100"
+              >
+                <LogIn className="h-4 w-4 mr-2" />
+                Login
+              </Button>
+            </Link>
+          )}
+
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden text-white hover:text-white/90">
@@ -143,6 +206,34 @@ const Navbar: React.FC = () => {
                       </Link>
                     </motion.div>
                   ))}
+                  <motion.div
+                    whileHover={{ x: 4 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="relative mt-4"
+                  >
+                    {user ? (
+                      <Button
+                        variant="ghost"
+                        size="lg"
+                        onClick={handleLogout}
+                        className="w-full flex items-center justify-start px-2 py-3 text-lg text-white/90 hover:text-white"
+                      >
+                        <LogOut className="mr-2 h-5 w-5" />
+                        Logout
+                      </Button>
+                    ) : (
+                      <Link href="/login" className="w-full">
+                        <Button
+                          variant="default"
+                          size="lg"
+                          className="w-full flex items-center justify-start px-2 py-3 text-lg bg-white text-black hover:bg-gray-100"
+                        >
+                          <LogIn className="mr-2 h-5 w-5" />
+                          Login
+                        </Button>
+                      </Link>
+                    )}
+                  </motion.div>
                 </motion.nav>
               </div>
             </SheetContent>

@@ -4,13 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../components/gradient-navbar";
 import Footer from "../components/footer";
-import ClientProvider from "./client-provider";
+import ClientProvider from "../components/auth/client-provider";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
 
 const dmSerif = localFont({  // Changed name to reflect the font
   src: "./fonts/DMSerifText-Regular.ttf",
@@ -19,10 +14,10 @@ const dmSerif = localFont({  // Changed name to reflect the font
 });
 export const metadata: Metadata = {
   title: {
-    template: '%s | Gradient',
-    default: 'Gradient',
+    template: '%s | Faro',
+    default: 'Faro',
   },
-  description: 'Strava for gyms'
+  description: 'Video Footage to Cad Designs'
 }
 
 export default function RootLayout({

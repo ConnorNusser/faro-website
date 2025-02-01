@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
-import { Linkedin, Instagram } from "lucide-react";
+import { Linkedin, Instagram, Video, Box, CodeSquare } from "lucide-react";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },
@@ -13,24 +13,23 @@ const fadeIn = {
   transition: { duration: 0.5 }
 };
 
-
 const TimelineEvent = ({ date, title, description, delay }: any) => (
   <motion.div 
-    className="relative pl-8 pb-8 border-l border-[#5D44C8]/20 last:border-0"
+    className="relative pl-8 pb-8 border-l border-cyan-400/20 last:border-0"
     initial={{ opacity: 0, x: -20 }}
     whileInView={{ opacity: 1, x: 0 }}
     viewport={{ once: true }}
     transition={{ delay, duration: 0.5 }}
   >
-    <div className="absolute left-0 transform -translate-x-1/2 w-4 h-4 rounded-full bg-[#5D44C8]/20 flex items-center justify-center">
-      <div className="w-2 h-2 rounded-full bg-[#5D44C8]" />
+    <div className="absolute left-0 transform -translate-x-1/2 w-4 h-4 rounded-full bg-cyan-400/20 flex items-center justify-center">
+      <div className="w-2 h-2 rounded-full bg-cyan-400" />
     </div>
     <div className="space-y-2">
-      <Badge variant="outline" className="text-sm font-medium text-[#5D44C8]">
+      <Badge variant="outline" className="text-sm font-medium text-cyan-400 border-cyan-400/20">
         {date}
       </Badge>
-      <h3 className="text-lg font-semibold text-[#18181B]">{title}</h3>
-      <p className="text-[#18181B]/70">{description}</p>
+      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <p className="text-white/70">{description}</p>
     </div>
   </motion.div>
 );
@@ -46,19 +45,19 @@ const MissionSection = () => (
     }}
   >
     <motion.div variants={fadeIn}>
-      <Badge className="bg-[#5D44C8]/10 text-[#5D44C8]">Our Mission</Badge>
+      <Badge className="bg-cyan-400/10 text-cyan-400">Our Mission</Badge>
     </motion.div>
     <motion.h1 
       variants={fadeIn}
-      className="text-4xl sm:text-5xl font-bold tracking-tight text-[#18181B]"
+      className="text-4xl sm:text-5xl font-bold tracking-tight text-white"
     >
-      Building the future of gym communities
+      Transforming Video Footage into Precise CAD Models
     </motion.h1>
     <motion.p 
       variants={fadeIn}
-      className="text-xl text-[#18181B]/70 max-w-2xl mx-auto"
+      className="text-xl text-white/70 max-w-2xl mx-auto"
     >
-      We're on a mission to transform how gym communities connect, engage, and grow together. No more awkward interactions or missed connections.
+      We're revolutionizing the engineering workflow by automatically converting video captures into accurate, workable CAD designs, saving countless hours in the design process.
     </motion.p>
   </motion.div>
 );
@@ -70,30 +69,30 @@ const FoundersMessage = () => (
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
   >
-    <Card className="max-w-4xl mx-auto p-12 bg-gradient-to-br from-white via-[#5D44C8]/2 to-transparent">
+    <Card className="max-w-4xl mx-auto p-12 bg-[#061820] bg-opacity-95 border-white/10 shadow-xl">
       <div className="space-y-8">
         <div className="flex items-center gap-3">
           <Badge 
             variant="outline" 
-            className="border-[#5D44C8] text-[#5D44C8] font-medium px-4 py-1"
+            className="border-cyan-400 text-cyan-400 font-medium px-4 py-1"
           >
             From the Founders
           </Badge>
-          <div className="h-[1px] flex-1 bg-gradient-to-r from-[#5D44C8]/20 to-transparent" />
+          <div className="h-[1px] flex-1 bg-gradient-to-r from-cyan-400/20 to-transparent" />
         </div>
 
         <div className="space-y-6 text-lg leading-relaxed">
-          <p className="text-[#18181B] font-medium">Dear Gradient Community,</p>
-          <p className="text-[#18181B]/80">
-            For years, we've grappled with the challenge of <span className="text-[#5D44C8] font-medium">connecting with others at the gym</span> without the awkwardness of interrupting their workouts. We saw a community eager to connect but lacking the right platform to do so.
+          <p className="text-white font-medium">Dear Faro Community,</p>
+          <p className="text-white/80">
+            We've seen firsthand how <span className="text-cyan-400 font-medium">traditional CAD modeling processes</span> can bottleneck engineering projects. The manual conversion of real-world objects into CAD models has long been a time-consuming and error-prone process.
           </p>
-          <p className="text-[#18181B]/80">
-            Gradient was born from this need - a platform that not only <span className="text-[#5D44C8] font-medium">eliminates the anxiety</span> of approaching strangers but actively <span className="text-[#5D44C8] font-medium">fosters meaningful connections</span> within the gym community.
+          <p className="text-white/80">
+            Faro was born from this challenge - a platform that <span className="text-cyan-400 font-medium">automates the conversion</span> of video footage into precise CAD models, revolutionizing how engineers and designers work. Our AI-powered solution doesn't just save time - it opens up new possibilities for <span className="text-cyan-400 font-medium">rapid prototyping and iterative design</span>.
           </p>
-          <div className="pt-4 border-t border-[#5D44C8]/10">
-            <p>In Good Health,<br /></p>
-            <p className="font-semibold text-[#18181B] bg-gradient-to-r from-[#5D44C8] to-[#60A5FA] bg-clip-text text-transparent">
-            Christian, Sharatt, Connor, Kinan & Caroline
+          <div className="pt-4 border-t border-cyan-400/10">
+            <p className="text-white/80">Building the Future of Design,<br /></p>
+            <p className="font-semibold text-white bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
+              Connor & Oz
             </p>
           </div>
         </div>
@@ -110,33 +109,33 @@ const TimelineSection = () => (
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
     >
-      <h2 className="text-2xl font-bold text-[#18181B]">Our Journey</h2>
-      <p className="text-[#18181B]/70">From idea to reality</p>
+      <h2 className="text-2xl font-bold text-white">Our Journey</h2>
+      <p className="text-white/70">From concept to innovation</p>
     </motion.div>
     
     <div className="relative">
       <TimelineEvent
-        date="October 2023"
-        title="The Idea"
-        description="Gradient was conceived from personal experiences and the need for better gym community connections."
+        date="Q4 2023"
+        title="The Innovation"
+        description="Faro emerged from the need to streamline the video-to-CAD conversion process in engineering workflows."
         delay={0.2}
       />
       <TimelineEvent
-        date="December 2023"
-        title="Development Begins"
-        description="Started building the first version of Gradient with a focus on community features."
+        date="Q1 2024"
+        title="Technology Development"
+        description="Developed our core AI technology for accurate video-to-CAD conversion with advanced feature recognition."
         delay={0.4}
       />
       <TimelineEvent
-        date="February 2024"
+        date="Q2 2024"
         title="Beta Launch"
-        description="Released our beta version to select partner gyms in Texas and Virginia."
+        description="Released our beta platform to select engineering firms and manufacturing partners."
         delay={0.6}
       />
       <TimelineEvent
-        date="March 2024"
-        title="First 1000 Users"
-        description="Reached our first milestone of 1000 active users across partner gyms."
+        date="Q3 2024"
+        title="Industry Recognition"
+        description="Achieved breakthrough results in conversion accuracy and processing speed."
         delay={0.8}
       />
     </div>
@@ -150,19 +149,19 @@ const ContactSection = () => (
     viewport={{ once: true }}
     transition={{ duration: 0.6 }}
   >
-    <Card className="max-w-3xl mx-auto p-12 bg-gradient-to-br from-[#5D44C8]/5 via-[#5D44C8]/2 to-transparent border-none shadow-lg">
+    <Card className="max-w-3xl mx-auto p-12 bg-[#061820] bg-opacity-95 border-white/10 shadow-xl">
       <div className="text-center space-y-8">
-        <h2 className="text-3xl font-bold tracking-tight text-[#18181B]">
+        <h2 className="text-3xl font-bold tracking-tight text-white">
           Connect With Us
         </h2>
-        <p className="text-lg text-[#18181B]/80 leading-relaxed max-w-xl mx-auto">
-          Have questions or want to join the Gradient community? Reach out at{' '}
+        <p className="text-lg text-white/80 leading-relaxed max-w-xl mx-auto">
+          Interested in transforming your engineering workflow? Reach out at{' '}
           <a 
-            href="mailto:christian@gradientapp.net"
-            className="text-[#5D44C8] hover:text-[#5D44C8]/80 font-semibold relative inline-block group"
+            href="mailto:oz@faro.ai"
+            className="text-cyan-400 hover:text-cyan-300 font-semibold relative inline-block group"
           >
-            christian@gradientapp.net
-            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#5D44C8]/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+            oz@faro.ai
+            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-cyan-400/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
           </a>
         </p>
         
@@ -175,17 +174,8 @@ const ContactSection = () => (
           <Button 
             size="lg"
             variant="ghost"
-            className="hover:bg-[#5D44C8]/10 hover:text-[#5D44C8] group px-8"
-            onClick={() => window.open('https://www.instagram.com/gradientconnect/', '_blank')}
-          >
-            <Instagram className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform duration-300" />
-            <span className="font-medium">Instagram</span>
-          </Button>
-          <Button 
-            size="lg"
-            variant="ghost"
-            className="hover:bg-[#5D44C8]/10 hover:text-[#5D44C8] group px-8"
-            onClick={() => window.open('https://www.linkedin.com/company/gradient-connect/', '_blank')}
+            className="hover:bg-cyan-400/10 hover:text-cyan-400 text-white group px-8"
+            onClick={() => window.open('https://www.linkedin.com/company/faro-ai/', '_blank')}
           >
             <Linkedin className="h-5 w-5 mr-3 group-hover:scale-110 transition-transform duration-300" />
             <span className="font-medium">LinkedIn</span>
@@ -198,10 +188,10 @@ const ContactSection = () => (
 
 export default function CompanyPage() {
   return (
-    <div className="w-full bg-gradient-to-b from-[#5D44C8]/5 to-white min-h-screen">
+    <div className="w-full bg-[#082832] min-h-screen bg-opacity-90">
       <div className="max-w-6xl mx-auto px-4 py-20 space-y-20">
         <MissionSection />
-        <FoundersMessage />
+        {/* <FoundersMessage /> */}
         <TimelineSection />
         <ContactSection />
       </div>

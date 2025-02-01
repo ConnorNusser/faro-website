@@ -80,18 +80,15 @@ const HeroSection: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="space-y-4"
           >
-            <Badge className="bg-white/20 text-white hover:bg-white/30">
-              Coming Soon
-            </Badge>
             
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white font-[var(--font-dm-serif)]">
-              From traffic footage to{' '}
-              <span className="text-cyan-400">strip maps</span>{' '}
+              From video footage to{' '}
+              <span className="text-cyan-400">cad designs</span>{' '}
               in minutes
             </h1>
             
             <p className="text-lg text-white/80">
-              Mastic is revolutionizing traffic engineering by automatically converting traffic camera footage into detailed strip maps, eliminating hundreds hours of manual work.
+              Faro is revolutionizing traffic engineering by automatically converting traffic camera footage into detailed strip maps, eliminating hundreds hours of manual work.
             </p>
           </motion.div>
 
@@ -121,7 +118,7 @@ const HeroSection: React.FC = () => {
                       <MetricCard 
                         icon={Map}
                         value="1-Click"
-                        label="Strip Map Generation"
+                        label="Cad Design Generation"
                         subtext="Fully automated process"
                       />
                     </div>
@@ -189,16 +186,6 @@ const HeroSection: React.FC = () => {
             )}
           </AnimatePresence>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="flex justify-center"
-          >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 text-sm text-cyan-400">
-              <Sparkles className="w-4 h-4" />
-              Join the future of traffic engineering
-            </div>
-          </motion.div>
         </div>
       </div>
     </motion.div>
