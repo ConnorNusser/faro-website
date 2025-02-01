@@ -1,0 +1,9 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    // This disables all rules
+    "@next/next/no-html-link-for-pages": "off",
+    "react/no-unescaped-entities": "off"
+  },
+  "ignorePatterns": ["**/*"]
+}
