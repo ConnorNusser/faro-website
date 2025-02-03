@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
-//import { useToast } from "@/components/ui/use-toast";
 import { ProcessingJob, CadOptions } from '@/app/types/dashboard';
 import supabaseClient from '@/app/db/client';
 
 export const useDashboard = () => {
-  //const { toast } = useToast();
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [isUploading, setIsUploading] = useState(false);
@@ -43,11 +41,11 @@ export const useDashboard = () => {
       if (error) throw error;
       setProcessingHistory(data);
     } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to load processing history"
-      });
+    //   toast({
+    //     variant: "destructive",
+    //     title: "Error",
+    //     description: "Failed to load processing history"
+    //   });
     }
   };
 
@@ -57,22 +55,22 @@ export const useDashboard = () => {
 
     // Validate file size (500MB limit)
     if (file.size > 500 * 1024 * 1024) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "File size exceeds 500MB limit"
-      });
+    //   toast({
+    //     variant: "destructive",
+    //     title: "Error",
+    //     description: "File size exceeds 500MB limit"
+    //   });
       return;
     }
 
     // Validate file type
     const validTypes = ['video/mp4', 'video/quicktime', 'video/avi'];
     if (!validTypes.includes(file.type)) {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Please upload an MP4, MOV, or AVI file"
-      });
+    //   toast({
+    //     variant: "destructive",
+    //     title: "Error",
+    //     description: "Please upload an MP4, MOV, or AVI file"
+    //   });
       return;
     }
 
@@ -126,17 +124,17 @@ export const useDashboard = () => {
       setProcessingStatus('processing');
       startPolling(jobData.id);
 
-      toast({
-        title: "Upload Complete",
-        description: "Your video is now being processed"
-      });
+    //   toast({
+    //     title: "Upload Complete",
+    //     description: "Your video is now being processed"
+    //   });
 
     } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Upload Failed",
-        description: error instanceof Error ? error.message : "An error occurred"
-      });
+    //   toast({
+    //     variant: "destructive",
+    //     title: "Upload Failed",
+    //     description: error instanceof Error ? error.message : "An error occurred"
+    //   });
       setProcessingStatus('error');
     } finally {
       setIsUploading(false);
@@ -202,11 +200,11 @@ export const useDashboard = () => {
       URL.revokeObjectURL(url);
       document.body.removeChild(a);
     } catch (error) {
-      toast({
-        variant: "destructive",
-        title: "Download Failed",
-        description: "Failed to download CAD file"
-      });
+    //   toast({
+    //     variant: "destructive",
+    //     title: "Download Failed",
+    //     description: "Failed to download CAD file"
+    //   });
     }
   };
 
