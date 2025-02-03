@@ -55,7 +55,6 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, badge }) => {
 
 interface NavItem {
   href: string;
-  icon: LucideIcon;
   label: string;
   badge?: boolean;
 }
@@ -85,13 +84,13 @@ const Navbar: React.FC = () => {
   };
 
   const publicNavItems: NavItem[] = [
-    { href: "/beta", icon: Users, label: "Partnership", badge: true },
-    { href: "/company", icon: Building2, label: "Company" }
+    { href: "/beta", label: "Partnership", badge: true },
+    { href: "/company", label: "Company" }
   ];
 
   const authenticatedNavItems: NavItem[] = [
-    { href: "/overview", icon: Layout, label: "Overview" },
-    { href: "/uploads", icon: Upload, label: "Uploads" }
+    { href: "/overview", label: "Overview" },
+    { href: "/uploads", label: "Uploads" }
   ];
 
   const navItems = user ? authenticatedNavItems : publicNavItems;
@@ -194,7 +193,6 @@ const Navbar: React.FC = () => {
                         href={item.href}
                         className="flex items-center px-2 py-3 text-lg text-white/90 hover:text-white"
                       >
-                        <item.icon className="mr-2 h-5 w-5" />
                         {item.label}
                         {item.badge && (
                           <Badge 

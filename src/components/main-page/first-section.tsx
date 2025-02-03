@@ -1,15 +1,12 @@
 'use client';
 import React, { useState } from 'react';
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { 
   Video,
   Timer,
   Calendar,
   LucideIcon,
   Map,
-  FileSpreadsheet,
-  Sparkles,
   X
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
