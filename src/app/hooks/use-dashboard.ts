@@ -99,9 +99,9 @@ export const useDashboard = () => {
         .storage
         .from('videos')
         .upload(filePath, selectedFile, {
-          onUploadProgress: (progress) => {
-            setUploadProgress(Math.round((progress.loaded / progress.total) * 100));
-          },
+        //   onUploadProgress: (progress) => {
+        //     setUploadProgress(Math.round((progress.loaded / progress.total) * 100));
+        //   },
         });
 
       if (uploadError) throw uploadError;
