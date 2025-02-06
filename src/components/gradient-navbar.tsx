@@ -114,7 +114,7 @@ const Navbar: React.FC = () => {
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <motion.img
             src="/images/mastic-logo.jpeg"
-            alt="Faro Logo"
+            alt="Argos Logo"
             className="h-5 w-auto"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

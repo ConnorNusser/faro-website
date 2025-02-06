@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto py-4 px-4 flex flex-col sm:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            © 2025 Faro LLC. All rights reserved
+            © 2025 Argos LLC. All rights reserved
           </p>
           <div className="flex space-x-4 mt-4 sm:mt-0">
             <a href="#" className="p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white transition-colors">
@@ -31,8 +31,8 @@ const Footer: React.FC = () => {
             </a>
             <div className="flex flex-col">
             <div className="space-y-12 mt-2">
-              <a href="mailto:contact@faro.ai" className="text-white/70 hover:text-white transition-colors block text-sm">
-                Contact us: contact@faro.ai
+              <a href="mailto:contact@withargos.com" className="text-white/70 hover:text-white transition-colors block text-sm">
+                Contact us: contact@withargos.com
               </a>
             </div>
           </div>

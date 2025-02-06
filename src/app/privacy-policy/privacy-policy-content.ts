@@ -1,5 +1,5 @@
 export const howWeUseInfoContent = {
-    title: 'How Gradient LLC Uses Information',
+    title: 'How Argos LLC Uses Information',
     subSections: [
       {
         subHeading: 'To provide the Services',
@@ -34,9 +34,9 @@ export const howWeUseInfoContent = {
     title: 'Introduction',
     content: [
       'Our privacy policy (the “Privacy Policy”) explains the information we collect, how we use and share it, how to manage your privacy controls, and your rights in connection with our websites, mobile applications, and services (collectively, the “Services”). Please also read our Terms of Service, which sets out the terms governing the Services.',
-      'Gradient LLC is headquartered in Dallas, Texas, USA. Our Services are provided by Gradient LLC.',
+      'Argos LLC is headquartered in Dallas, Texas, USA. Our Services are provided by Argos LLC.',
       'This policy was written in English. To the extent a translated version conflicts with the English version, the English version controls. Unless indicated otherwise, this Privacy Policy does not apply to our subsidiaries or third-party products or services.',
-      'Questions or comments about this Privacy Policy may be submitted by mail or email using the contact information below: Gradient LLC Attn: Legal, gradient@gradientapp.net.'
+      'Questions or comments about this Privacy Policy may be submitted by mail or email using the contact information below: Argos LLC Attn: Legal, gradient@gradientapp.net.'
     ]
   };
 
@@ -47,13 +47,13 @@ export const privacyPolicyContent = [
       heading: 'Contact Information',
       paragraphs: [
         'Questions or comments about this Privacy Policy may be submitted by mail or email using the contact information below:',
-        'Gradient LLC\nAttn: Legal\nEmail: gradient@gradientapp.net'
+        'Argos LLC\nAttn: Legal\nEmail: contact@withargos.com'
       ]
     },
     {
-      heading: 'Information Gradient LLC Collects',
+      heading: 'Information Argos LLC Collects',
       paragraphs: [
-        'Gradient LLC collects information about you, including information that directly or indirectly identifies you, if you or other Gradient LLC users choose to share it. We receive information in several ways, including when you track, complete, or upload activities using the Services.'
+        'Argos LLC collects information about you, including information that directly or indirectly identifies you, if you or other Argos LLC users choose to share it. We receive information in several ways, including when you track, complete, or upload activities using the Services.'
       ]
     },
     {
@@ -77,25 +77,25 @@ export const privacyPolicyContent = [
     {
       heading: 'Connected Devices and Apps',
       paragraphs: [
-        'Gradient LLC collects information from devices and apps you connect to Gradient LLC. For example, you may connect your Garmin watch or other devices, and information from these devices and apps will be passed along to Gradient LLC.'
+        'Argos LLC collects information from devices and apps you connect to Argos LLC. For example, you may connect your Garmin watch or other devices, and information from these devices and apps will be passed along to Argos LLC.'
       ]
     },
     {
       heading: 'Health Information',
       paragraphs: [
-        'Gradient LLC may collect or infer health information. Certain health information may be inferred from sources such as heart rate, power, cadence, weight, or other indicators. Before you can upload health information, you must give your explicit consent to the processing of that information by Gradient LLC.'
+        'Argos LLC may collect or infer health information. Certain health information may be inferred from sources such as heart rate, power, cadence, weight, or other indicators. Before you can upload health information, you must give your explicit consent to the processing of that information by Argos LLC.'
       ]
     },
     {
       heading: 'Payment Information',
       paragraphs: [
-        'When you make a payment on Gradient LLC, you may provide payment information such as your payment card or other payment details. We use PCI-compliant third-party payment services and do not store your credit card information.'
+        'When you make a payment on Argos LLC, you may provide payment information such as your payment card or other payment details. We use PCI-compliant third-party payment services and do not store your credit card information.'
       ]
     },
     {
       heading: 'Third-Party Accounts',
       paragraphs: [
-        'Gradient LLC allows you to sign up and log in to the Services using accounts you create with third-party products and services, such as Meta, Google, or Apple. If you access the Services with these accounts, we collect the information you have agreed to make available.'
+        'Argos LLC allows you to sign up and log in to the Services using accounts you create with third-party products and services, such as Meta, Google, or Apple. If you access the Services with these accounts, we collect the information you have agreed to make available.'
       ]
     },
     {
@@ -107,13 +107,13 @@ export const privacyPolicyContent = [
     {
       heading: 'Other Information',
       paragraphs: [
-        'We may collect information directly from you through surveys or from other Gradient LLC users, such as when they give you kudos or comment on your activities.'
+        'We may collect information directly from you through surveys or from other Argos LLC users, such as when they give you kudos or comment on your activities.'
       ]
     },
     {
         heading: 'Third-Party Accounts',
         paragraphs: [
-          'Gradient LLC allows you to sign up and log in to the Services using accounts you create with third-party products and services, such as Meta, Google, or Apple (collectively, “Third-Party Accounts”). If you access the Services with Third-Party Accounts we will collect information that you have agreed to make available such as your name, email address, profile information and preferences. This information is collected by the Third-Party Account providers and is provided to Gradient LLC under their privacy policies. You can generally control the information that we receive from these sources using the privacy controls in your Third-Party Account.'
+          'Argos LLC allows you to sign up and log in to the Services using accounts you create with third-party products and services, such as Meta, Google, or Apple (collectively, “Third-Party Accounts”). If you access the Services with Third-Party Accounts we will collect information that you have agreed to make available such as your name, email address, profile information and preferences. This information is collected by the Third-Party Account providers and is provided to Argos LLC under their privacy policies. You can generally control the information that we receive from these sources using the privacy controls in your Third-Party Account.'
         ]
       },
       {
@@ -127,20 +127,20 @@ export const privacyPolicyContent = [
         heading: 'Other Information',
         paragraphs: [
           'We may collect information directly from you or through our service providers, such as when we collect your feedback through surveys.',
-          'We may also collect information about you from other Gradient LLC users such as when they give you kudos or comment on your activities.'
+          'We may also collect information about you from other Argos LLC users such as when they give you kudos or comment on your activities.'
         ]
       },
       {
-        heading: 'How Gradient LLC Uses Information',
+        heading: 'How Argos LLC Uses Information',
         paragraphs: [
-          'Gradient LLC uses the information we collect and receive as described below.',
+          'Argos LLC uses the information we collect and receive as described below.',
           'To provide the Services: We use the information we collect and receive to provide the Services, including providing you with the ability to record your activities and analyze your performance. For example, to compare your past efforts, analyze your training, and - with your consent - use your heart rate information to provide you with interesting and useful performance analysis. We may also match your GPS activities to specific segments or routes to analyze your efforts against those of other users and to establish leaderboards.'
         ]
       },
       {
         heading: 'To customize your experience',
         paragraphs: [
-          'We use the information we collect and receive to customize your experience. For example, we may suggest segments, routes, challenges, or clubs on Gradient LLC that may interest you, users that you may want to follow, or new features that you may want to try.'
+          'We use the information we collect and receive to customize your experience. For example, we may suggest segments, routes, challenges, or clubs on Argos LLC that may interest you, users that you may want to follow, or new features that you may want to try.'
         ]
       },
       {
@@ -170,7 +170,7 @@ export const privacyPolicyContent = [
       {
         heading: 'To communicate with you',
         paragraphs: [
-          'We may also use the information we collect and receive to market and promote the Services, activities and events on Gradient LLC , and other commercial products or services, including using email and push notifications, in accordance with your preferences.'
+          'We may also use the information we collect and receive to market and promote the Services, activities and events on Argos LLC , and other commercial products or services, including using email and push notifications, in accordance with your preferences.'
         ]
       },
       {
@@ -188,13 +188,13 @@ export const privacyPolicyContent = [
       {
         heading: 'Service Providers',
         paragraphs: [
-          'We may share your information with third parties who provide services to Gradient LLC such as supporting, improving, promoting and securing the Services, processing payments, or fulfilling orders.'
+          'We may share your information with third parties who provide services to Argos LLC such as supporting, improving, promoting and securing the Services, processing payments, or fulfilling orders.'
         ]
       },
       {
         heading: 'Publicly Available Information',
         paragraphs: [
-          'When you join the Gradient LLC community as an individual of 18 years of age or older, your profile and your activities are set to be viewable by everyone by default.'
+          'When you join the Argos LLC community as an individual of 18 years of age or older, your profile and your activities are set to be viewable by everyone by default.'
         ]
       },
       {
@@ -206,7 +206,7 @@ export const privacyPolicyContent = [
       {
         heading: 'Aggregate Information',
         paragraphs: [
-          'Gradient LLC may deidentify and aggregate the information you and others make available in connection with the Services and post it publicly or share it with third parties.'
+          'Argos LLC may deidentify and aggregate the information you and others make available in connection with the Services and post it publicly or share it with third parties.'
         ]
       },
       {
@@ -224,13 +224,13 @@ export const privacyPolicyContent = [
       {
         heading: 'Managing Your Settings',
         paragraphs: [
-          'Gradient LLC offers several features and settings to help you manage your privacy and share your activities.'
+          'Argos LLC offers several features and settings to help you manage your privacy and share your activities.'
         ]
       },
       {
         heading: 'Privacy Controls',
         paragraphs: [
-          'Gradient LLC offers several features and settings to help you manage your privacy and share your activities.'
+          'Argos LLC offers several features and settings to help you manage your privacy and share your activities.'
         ]
       },
       {
@@ -254,7 +254,7 @@ export const privacyPolicyContent = [
       {
         heading: 'How We Protect Information',
         paragraphs: [
-          'Gradient LLC implements technical, physical, and organizational measures and controls to safeguard and protect the transmission and storage of the data we collect.'
+          'Argos LLC implements technical, physical, and organizational measures and controls to safeguard and protect the transmission and storage of the data we collect.'
         ]
       },
       {
@@ -278,7 +278,7 @@ export const privacyPolicyContent = [
       {
         heading: 'Privacy Policy Updates',
         paragraphs: [
-          'Gradient LLC reserves the right to modify this Privacy Policy at any time. Please review it occasionally. If Gradient LLC makes changes to this Privacy Policy, the updated Privacy Policy will be posted in a timely manner. If we make changes we deem to be material, we will provide a prominent notice. If you object to any changes to this Privacy Policy, you should stop using the Services and delete your account.'
+          'Argos LLC reserves the right to modify this Privacy Policy at any time. Please review it occasionally. If Argos LLC makes changes to this Privacy Policy, the updated Privacy Policy will be posted in a timely manner. If we make changes we deem to be material, we will provide a prominent notice. If you object to any changes to this Privacy Policy, you should stop using the Services and delete your account.'
         ]
       }
   ];

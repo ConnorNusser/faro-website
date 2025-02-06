@@ -14,8 +14,8 @@ const dmSerif = localFont({  // Changed name to reflect the font
 });
 export const metadata: Metadata = {
   title: {
-    template: '%s | Faro',
-    default: 'Faro',
+    template: '%s | Argos',
+    default: 'Argos',
   },
   description: 'Video Footage to Cad Designs'
 }

@@ -34,11 +34,11 @@ const FoundersMessageCard = () => {
             </Box>
 
             <chakra.h2 color="black" fontSize="2xl" mb={2}>
-              A Message from the Founders of Gradient
+              A Message from the Founders of Argos
             </chakra.h2>
 
             <chakra.p color="gray.500" fontSize="lg" mb={4}>
-              Dear Gradient Community,
+              Dear Argos Community,
             </chakra.p>
 
             <chakra.p color="gray.500" fontSize="lg" mb={4}>
@@ -46,7 +46,7 @@ const FoundersMessageCard = () => {
             </chakra.p>
 
             <chakra.p color="gray.500" fontSize="lg" mb={4}>
-              Gradient was conceived as a solution to bridge this gap. It not only eliminates the anxiety of approaching strangers...
+              Argos was conceived as a solution to bridge this gap. It not only eliminates the anxiety of approaching strangers...
             </chakra.p>
 
             <chakra.p color="gray.500" fontSize="lg">

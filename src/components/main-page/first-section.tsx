@@ -85,7 +85,7 @@ const HeroSection: React.FC = () => {
             </h1>
             
             <p className="text-lg text-white/80">
-              Faro is revolutionizing traffic engineering by automatically converting traffic camera footage into detailed strip maps, eliminating hundreds hours of manual work.
+              Argos is revolutionizing traffic engineering by automatically converting traffic camera footage into detailed strip maps, eliminating hundreds hours of manual work.
             </p>
           </motion.div>
 

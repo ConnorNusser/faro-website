@@ -82,12 +82,12 @@ const FoundersMessage = () => (
         </div>
 
         <div className="space-y-6 text-lg leading-relaxed">
-          <p className="text-white font-medium">Dear Faro Community,</p>
+          <p className="text-white font-medium">Dear Argos Community,</p>
           <p className="text-white/80">
             We've seen firsthand how <span className="text-cyan-400 font-medium">traditional CAD modeling processes</span> can bottleneck engineering projects. The manual conversion of real-world objects into CAD models has long been a time-consuming and error-prone process.
           </p>
           <p className="text-white/80">
-            Faro was born from this challenge - a platform that <span className="text-cyan-400 font-medium">automates the conversion</span> of video footage into precise CAD models, revolutionizing how engineers and designers work. Our AI-powered solution doesn't just save time - it opens up new possibilities for <span className="text-cyan-400 font-medium">rapid prototyping and iterative design</span>.
+            Argos was born from this challenge - a platform that <span className="text-cyan-400 font-medium">automates the conversion</span> of video footage into precise CAD models, revolutionizing how engineers and designers work. Our AI-powered solution doesn't just save time - it opens up new possibilities for <span className="text-cyan-400 font-medium">rapid prototyping and iterative design</span>.
           </p>
           <div className="pt-4 border-t border-cyan-400/10">
             <p className="text-white/80">Building the Future of Design,<br /></p>
@@ -117,7 +117,7 @@ const TimelineSection = () => (
       <TimelineEvent
         date="Q4 2023"
         title="The Innovation"
-        description="Faro emerged from the need to streamline the video-to-CAD conversion process in engineering workflows."
+        description="Argos emerged from the need to streamline the video-to-CAD conversion process in engineering workflows."
         delay={0.2}
       />
       <TimelineEvent
@@ -157,10 +157,10 @@ const ContactSection = () => (
         <p className="text-lg text-white/80 leading-relaxed max-w-xl mx-auto">
           Interested in transforming your engineering workflow? Reach out at{' '}
           <a 
-            href="mailto:oz@faro.ai"
+            href="mailto:contact@withargos.com"
             className="text-cyan-400 hover:text-cyan-300 font-semibold relative inline-block group"
           >
-            oz@faro.ai
+            contact@withargos.com
             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-cyan-400/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
           </a>
         </p>
