@@ -10,8 +10,7 @@ import {
   X
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import Cal from "@calcom/embed-react";
 
 interface MetricCardProps {
   icon: LucideIcon;
@@ -146,38 +145,9 @@ const HeroSection: React.FC = () => {
                       <X className="w-5 h-5" />
                     </button>
                   </div>
+                  <Cal calLink="connor-nusser-4jxube/30min" config={{ theme: "light" }}></Cal>
 
-                  <form onSubmit={handleSubmit} className="space-y-4">
-                    <div>
-                      <Input
-                        placeholder="Your Name"
-                        required
-                        className="bg-white/5 border-white/10 text-white placeholder:text-white/40"
-                      />
-                    </div>
-                    <div>
-                      <Input
-                        type="email"
-                        placeholder="Work Email"
-                        required
-                        className="bg-white/5 border-white/10 text-white placeholder:text-white/40"
-                      />
-                    </div>
-                    <div>
-                      <Input
-                        placeholder="Company"
-                        required
-                        className="bg-white/5 border-white/10 text-white placeholder:text-white/40"
-                      />
-                    </div>
-                    <Button 
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-cyan-400 hover:bg-cyan-500 text-[#082832] font-medium disabled:opacity-50"
-                    >
-                      {isSubmitting ? "Submitting..." : "Submit Request"}
-                    </Button>
-                  </form>
+                  
                 </Card>
               </motion.div>
             )}
